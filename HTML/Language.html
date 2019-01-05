@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Language</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Hanjaya">
+	<meta name="description" content="Bahasa Sunda">
+	<meta name="keywords" content="Sunda, Bahasa, Language">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="../CSS/Language.css">
+	<link rel="stylesheet" href="../CSS/slideshow_style.css">
+	<link rel="stylesheet" href="CSS Font/fonts.css">
+	<link rel="icon" href="../Multimedia/Images/Pictures/ithb.ico">
+	
+	<!--jQuery-->
+	<script src="../Library/jquery-3.3.1.js"></script>
+	<script src="../Library/jquery-ui.js"></script>
+	<link rel="stylesheet" href="../Library/jquery-ui.css">
+	
+	<script>
+		$(function(){
+			$(".flogo").tooltip();
+		});
+		
+		$(function(){
+			var variableSearch=[
+				"Language",
+				"aksaraSunda",
+				"Dictionary",
+				"traditionalMusic"
+			];
+		
+			$("#searchBox").autocomplete({
+				source:variableSearch
+			});
+		});
+		
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				$(".hide").each(function(i){
+					var bottomObject=$(this).offset().top + $(this).outerHeight();
+					var bottomWindow=$(window).scrollTop() + $(window).height();
+					
+					if(bottomWindow > bottomObject){
+						$(this).css({"opacity" : "1.0"})
+					}
+				});
+			});
+		});
+		
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				var scrollBottom=$(document).height() - $(window).height() - $(window).scrollTop(); 
+				if(scrollBottom == 0){
+					$(".containeriPad").css({"opacity" : "1"})
+				}else{
+					$(".containeriPad").css({"opacity" : "0.8"})
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="title">
+		<a href="Home.html"><img class="titlePC" src="../Multimedia/Images/Pictures/websiteLogo.png"></a>
+		<span class="diff">Language</span>
+	</div>
+	<div class="navbar">
+		<ul>
+			<li><a href="Home.html">
+				<img class="logo" src="../Multimedia/Images/Pictures/home.png">
+				<img class="text" src="../Multimedia/Images/Pictures/homeText.png">
+				</a>
+			</li>
+			<li><a href="">							<!--Dead link-->
+				<img class="logo" src="../Multimedia/Images/Pictures/history.png">
+				<img class="text" src="../Multimedia/Images/Pictures/historyText.png">
+				</a>
+			</li>
+			<li><a href="">							<!--Dead link-->
+				<img class="logo" src="../Multimedia/Images/Pictures/culture.png">
+				<img class="text" src="../Multimedia/Images/Pictures/cultureText.png">
+				</a>
+			</li>
+			<li><a href="">							<!--Dead link-->
+				<img class="logo" src="../Multimedia/Images/Pictures/tourism.png">
+				<img class="text" src="../Multimedia/Images/Pictures/tourismText.png">
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="slideshow">
+		<div class="mySlides fade">
+			<a href="">								<!--Dead link-->
+			<video autoplay="autoplay" muted="muted" loop="loop" class="myVideo">
+				<source src="../Multimedia/Video/Tarian/slideshowTarian.mp4" type="video/mp4">
+			</video>
+			</a>
+		</div>
+	
+		<div class="mySlides fade">
+			<a href="traditionalMusic.html">								
+			<video autoplay="autoplay" muted="muted" loop="loop" class="myVideo">
+				<source src="../Multimedia/Video/Traditional Music/slideshowMusik.mp4" type="video/mp4">
+			</video>
+			</a>
+		</div>
+		
+		<div class="mySlides fade">
+			<a href="Language.html">
+			<video autoplay="autoplay" muted="muted" loop="loop" class="myVideo">
+				<source src="../Multimedia/Video/Bahasa/slideshowBahasa.mp4" type="video/mp4">
+			</video>
+			</a>
+		</div>
+	</div>
+	<script src="../JavaScript/slideshow_script.js"></script>
+	
+	<div class="searchContainer">
+		<input id="searchBox" placeholder="Mencari sesuatu?"><a id="searchLink" href=""><img id="searchIcon" src="../Multimedia/Images/Pictures/search.png"></a>
+	</div>
+	<script src="../JavaScript/searchBox_script.js"></script>
+	
+	<div class="content">
+		<h1 class="hide">Bahasa Sunda</h1>
+		<br>
+		<p class="hide">adalah sebuah bahasa dari cabang <mark>Melayu-Polinesia</mark> dalam rumpun bahasa <mark>Austronesia</mark>. Bahasa ini dituturkan oleh setidaknya <mark>42 juta</mark> orang dan 
+		   merupakan bahasa ibu dengan penutur terbanyak <mark>kedua</mark> di Indonesia setelah bahasa Jawa. Bahasa Sunda dituturkan di hampir seluruh provinsi Jawab Barat dan 
+		   Banten, serta wilayah barat Jawa Tengah mulai dari kali Brebes (Sungai Cipamali) di wilayah Kabupaten Brebes dan Kali Serayu (Sungai Ciserayu) di Kabupaten Cilacap, di
+		   sebagian kawasan Jakarta, seluruh provinsi di Indonesia dan luar negri yang menjadi daerah urbanisasi Suku Sunda.</p>
+		<span class="hide" style="font-weight:bold;text-decoration:underline;color:red">Navigasi Artikel :</span>
+		<br>
+		<br>
+		<ul class="articleNav hide">
+			<li><a href="#variasi">Variasi dalam Bahasa Sunda</a></li>
+			<li><a href="#sejarah">Sejarah dan Penyebaran</a></li>
+			<li><a href="#undak">Undak Usuk Basa</a></li>
+			<li><a href="#perbedaan">Perbedaan dengan Bahasa Sunda di Banten</a></li>
+		</ul>
+		<br>
+		<br>
+		<h2 class="hide" id="variasi">Variasi dalam Bahasa Sunda</h2>
+		<p class="hide">Dialek <span style="font-style:italic">(basa wewengkon)</span> bahasa Sunda beragam, mulai dari dialek <mark>Sunda-Banten</mark> hingga dialek <mark>Sunda-Jawa Tengahan</mark> yang
+		   mulai tercampur dengan bahasa Jawa. Para pakar membedakan menjadi <mark>6 dialek</mark> :</p>
+		 <ul class="hide">
+			<li>Dialek Barat <span style="font-style:italic">(Bahasa Banten)</span></li>
+			<li>Dialek Utara</li>
+			<li>Dialek Selatan <span style="font-style:italic">(Priangan)</span></li>
+			<li>Dialek Tengah Timur</li>
+			<li>Dialek Timur Laut (termasuk <span style="font-style:italic">Sunda Cirebon</span> )</li>
+			<li>Dialek Tenggara</li>
+		 </ul>
+		 <p class="hide">Dialek Barat dipertuturkan di daerah <mark>Banten</mark> dan <mark>Lampung</mark>. Dialek Utara mencakup daerah Sunda Utara termasuk <mark>Kota Bogor</mark> dan sebagian
+		    daerah <mark>Pantura</mark>. Lalu Dialek Selatan adalah Dialek Priangan yang mencakup <mark>Kota Bandung</mark> dan sekitarnya. Sementara itu dialek Tengah Timur adalah 
+			dialek di sekitar <mark>Kabupaten Majalengka</mark> dan sebagian <mark>Kabupaten Indramayu</mark>. Dialek Timur Laut adalah dialek di sekitar <mark>Kabupaten Cirebon, Kabupaten Kuningan</mark> 
+			juga sebagian <mark>Kabupaten Brebes</mark> dan <mark>Kabupaten Tegal</mark> di Jawa Tengah. Dan akhirnya dialek Tenggara adalah dialek di sekitar <mark>Kabupaten Ciamis</mark> juga
+			<mark>Kabupaten Cilacap</mark> dan <mark>Kabupaten Banyumas</mark> di Jawa Tengah.</p>
+			<br>
+			<center>
+				<figure class="hide">
+					<a href="../Multimedia/Images/Pictures/variasiBahasaSunda.png"><img class="variasiBSunda" src="../Multimedia/Images/Pictures/variasiBahasaSunda.png"></a>
+					<figcaption style="font-style:italic;font-size:95%">Courtesy : Wikipedia</figcaption>
+				</figure>
+			</center>
+			<br>
+		 <p class="hide"><mark>Bahasa Sunda Kuno</mark> adalah bentuk Bahasa Sunda yang ditemukan pada beberapa catatan tertulis, baik di batu (prasasti) maupun lembaran daun kering (lontar). Tidak diketahui
+		    apakah bahasa ini adalah dialek tersendiri atau merupakan bentuk yang menjadi pendahulu bahasa Sunda modern.</p>
+		<br>
+		<center>
+				<figure class="hide">
+					<a href="../Multimedia/Images/Pictures/prasastiSundaKuno.jpg"><img class="variasiBSunda" src="../Multimedia/Images/Pictures/prasastiSundaKuno.jpg"></a>
+					<figcaption style="font-style:italic;font-size:95%">Prasasti Cikapundung bertuliskan <q><i>unggal jagat jalmah hendap</i></q><br>Courtesy : voaindonesia.com</figcaption>
+				</figure>
+		</center>
+		<br>
+		<br>
+		<br>
+		<h2 class="hide" id="sejarah">Sejarah dan Penyebaran</h2>
+		<p class="hide">Bahasa Sunda terutama dipertuturkan di sebelah barat pulau Jawa, di daerah yang dijuluki <mark>Tatar Sunda (Pasundan)</mark>. Namun, bahasa Sunda juga dipertuturkan
+		   di baguian barat Jawa Tengah, khususnya di <mark>Kabupaten Brebes dan Cilacap</mark>, dikarenakan wilayah ini dulunya berada di bawah kekuasaan <mark>Kerajaan Galuh</mark>.
+		   Banyak nama-nama tempat di Cilacap yang masih merupakan nama Sunda dan bukan nama Jawa seperti contohnya <mark>Dayeuhluhur, Cimanggu</mark>.
+		</p>
+		
+		<p class="hide">Selain itu menurut beberapa pakar bahasa Sunda sampai sekitar abad ke-6 wilayah penuturannya sampai di sekitar Dataran Tinggi Dieng di Jawa Tengah, berdasarkan nama 
+		<mark>Dieng</mark> yang dianggap sebagai nama Sunda (asal kata <span style="color:red"><i>dihyang</i></span> yang merupakan bahasa Sunda Kuno). Seiring transmigrasi dan imigrasi
+		yang dilakukan oleh etnis Sunda, penutur bahasa ini telah menyebar sampai ke luar pulau Jawa. Misalkan di Lampung, Sumatra Selatan, Jambi, Riau, Kalimantan Barat, dan Sulawesi Tenggara 
+		dimana penduduk etnis Sunda dengan jumlah signifikan menetap di daerah luar Pasundan tersebut.
+		</p>
+		<br>
+		<br>
+		<h2 class="hide" id="undak">Undak Usuk Basa</h2>
+		<p class="hide" style="text-indent:4%"><span style="color:green">Apa yang dimaksud dengan Undak Usuk Basa?</span></p>
+		<p class="hide" style="text-indent:4%"><span style="color:purple">Undak Usuk Basa adalah tingkatan-tingkatan bahasa Sunda (sopan santun berbahasa)</span></p>
+		<p class="hide">Karena pengaruh budaya <mark>Jawa</mark> pada masa kekuasaan kerajaan <mark>Mataram-Islam</mark>, bahasa Sunda <i>- terutama di wilayah Parahyangan -</i> mengenal undak 
+		 usuk basa atau <q>tingkatan berbahasa</q>, mulai dari yang <mark>bahasa halus</mark>, <mark>bahasa loma/lancaran</mark> hingga <mark>bahasa kasar</mark>.Namun di wilayah
+		 pedesaan/pegunungan dan mayoritas daerah Banten, bahasa Sunda <i>loma</i> (bagi orang Bandung terdengar kasar) tetap dominan.Cek daftar undak unduk basa di <a href="#bottom">sini</a>
+		</p>
+		<br>
+		<br>
+		<h2 class="hide" id="perbedaan">Perbedaan dengan Bahasa Sunda di Banten</h2>
+		<p class="hide">Bahasa Sunda Banten adalah bahasa Sunda yang digunakan sebagian masyarakat di Banten, serta yang berada di daerah Priangan seperti Garut, Tasikmalaya, Bandung, dan 
+		   lain sebagainya. Bahasa Sunda di Banten juga umumnya tidak mengenal tingkatan, dikarenakan <mark>wilayah Banten tidak pernah berada di bawah kekuasaan Kesultanan Mataram.</mark> 
+		   Bahasa Sunda tersebut masih terlihat memiliki hubungan erat dengan bahasa Sunda Kuno, namun oleh mayoritas orang-orang yang berbahasa Sunda yang memiliki tingkatan 
+		   (Priangan), bahasa Sunda Banten di Rangkasbitung dan Pandeglang digolongkan sebagai bahasa Sunda kasar. Secara praktiknya, bahasa Sunda Banten digolongkan sebagai 
+		   <mark>bahasa Sunda dialek Barat</mark>.</p>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 
+		<a href="aksaraSunda.html"><img id="navLeft" src="../Multimedia/Images/Pictures/toAksaraSunda.png" onmouseenter="leftChange()" onmouseleave="leftRestart()"></a>
+		<a id="bottom" href="Dictionary.html"><img id="navRight" src="../Multimedia/Images/Pictures/toDictionary.png" onmouseenter="rightChange()" onmouseleave="rightRestart()"></a>
+	</div>
+	
+	<script src="../JavaScript/Language_Navigator.js"></script>
+	<div class="containeriPad">
+		<div class="naviPad">
+			<div class="division">
+				<a href="Home.html">
+					<img class="logo" src="../Multimedia/Images/Pictures/home.png">
+					<img class="text" src="../Multimedia/Images/Pictures/homeText.png">
+				</a>
+			</div>
+			<div class="division">
+				<a href="">								<!--Dead link-->
+					<img class="logo" src="../Multimedia/Images/Pictures/history.png">
+					<img class="text" src="../Multimedia/Images/Pictures/historyText.png">
+				</a>
+			</div>
+			<div class="division">
+				<a href="">								<!--Dead link-->
+					<img class="logo" src="../Multimedia/Images/Pictures/culture.png">
+					<img class="text" src="../Multimedia/Images/Pictures/cultureText.png">
+				</a>
+			</div>
+			<div class="division">	
+				<a href="">								<!--Dead link-->
+					<img class="logo" src="../Multimedia/Images/Pictures/tourism.png">
+					<img class="text" src="../Multimedia/Images/Pictures/tourismText.png">
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<div class="footerLogo">
+			<a href="Home.html"><img class="footerPC" src="../Multimedia/Images/Pictures/websiteLogo.png"></a>
+		</div>
+		
+		<div class="footerCopyright">
+			Copyright&copy;ITHB Nyunda Team<br>
+			Jl. Dipati Ukur No.80-84, Lebakgede, Jawa Barat 40132
+		</div>
+		
+		<div class="footerMedsos">
+			<a href="https://www.facebook.com/ithb.bandung/">
+				<img src="../Multimedia/Images/Pictures/FB.png" class="flogo" title="follow us at Facebook">
+			</a>
+			
+			<a href="https://www.instagram.com/kampusharapanbangsa/">
+				<img src="../Multimedia/Images/Pictures/IG.png" class="flogo" title="follow us at Instagram">
+			</a>
+			
+			<a href="https://www.youtube.com/channel/UCMJcUGgAzgyg5rOg2irKjRg?view_as=subscriber" title="follow us at Youtube">
+				<img src="../Multimedia/Images/Pictures/youtubeLogo.png" class="flogo">
+			</a>
+		</div>
+	</div>
+</body>
+</html>

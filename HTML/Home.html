@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>ITHB Nyunda</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Hanjaya">
+	<meta name="description" content="Home">
+	<meta name="keywords" content="Home">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="../CSS/Home.css">
+	<link rel="stylesheet" href="../CSS/slideshow_style.css">
+	<link rel="stylesheet" href="CSS Font/fonts.css">
+	<link rel="icon" href="../Multimedia/Images/Pictures/ithb.ico">
+	
+	<!--jQuery-->
+	<script src="../Library/jquery-3.3.1.js"></script>
+	<script src="../Library/jquery-ui.js"></script>
+	<link rel="stylesheet" href="../Library/jquery-ui.css">
+	
+	<script>
+		$(function(){
+			$(".flogo").tooltip();
+		});
+		
+		$(function(){
+			var variableSearch=[
+				"Language",
+				"aksaraSunda",
+				"Dictionary",
+				"traditionalMusic"
+			];
+		
+			$("#searchBox").autocomplete({
+				source:variableSearch
+			});
+		});
+		
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				var scrollBottom=$(document).height() - $(window).height() - $(window).scrollTop(); 
+				if(scrollBottom == 0){
+					$(".containeriPad").css({"opacity" : "1"})
+				}else{
+					$(".containeriPad").css({"opacity" : "0.8"})
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="title">
+		<a href="Home.html"><img class="titlePC" src="../Multimedia/Images/Pictures/websiteLogo.png"></a>
+		ITHB<span class="diff">Nyunda</span>
+	</div>
+	<div class="navbar">
+		<ul>
+			<li><a href="Home.html">
+				<img class="logo" src="../Multimedia/Images/Pictures/home.png">
+				<img class="text" src="../Multimedia/Images/Pictures/homeText.png">
+				</a>
+			</li>
+			<li><a href="">				<!--Dead link-->
+				<img class="logo" src="../Multimedia/Images/Pictures/history.png">
+				<img class="text" src="../Multimedia/Images/Pictures/historyText.png">
+				</a>
+			</li>
+			<li><a href="">				<!--Dead link-->
+				<img class="logo" src="../Multimedia/Images/Pictures/culture.png">
+				<img class="text" src="../Multimedia/Images/Pictures/cultureText.png">
+				</a>
+			</li>
+			<li><a href="">				<!--Dead link-->
+				<img class="logo" src="../Multimedia/Images/Pictures/tourism.png">
+				<img class="text" src="../Multimedia/Images/Pictures/tourismText.png">
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="slideshow">
+		<div class="mySlides fade">
+			<a href="">					<!--Dead link-->
+			<video autoplay="autoplay" muted="muted" loop="loop" class="myVideo">
+				<source src="../Multimedia/Video/Tarian/slideshowTarian.mp4" type="video/mp4">
+			</video>
+			</a>
+		</div>
+	
+		<div class="mySlides fade">
+			<a href="traditionalMusic.html">			
+			<video autoplay="autoplay" muted="muted" loop="loop" class="myVideo">
+				<source src="../Multimedia/Video/Traditional Music/slideshowMusik.mp4" type="video/mp4">
+			</video>
+			</a>
+		</div>
+		
+		<div class="mySlides fade">
+			<a href="Language.html">					
+			<video autoplay="autoplay" muted="muted" loop="loop" class="myVideo">
+				<source src="../Multimedia/Video/Bahasa/slideshowBahasa.mp4" type="video/mp4">
+			</video>
+			</a>
+		</div>
+	</div>
+	<script src="../JavaScript/slideshow_script.js"></script>
+		
+	<div class="searchContainer">
+		<input id="searchBox" placeholder="Mencari sesuatu?"><a id="searchLink" href=""><img id="searchIcon" src="../Multimedia/Images/Pictures/search.png"></a>
+	</div>
+	<script src="../JavaScript/searchBox_script.js"></script>
+		
+	<div class="content">
+		YThis is Content
+		<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ini cuma mau ngecek panjang kalimat saja tidak perlu direpotkan sekali lagi hanya mengetes panjang kalimat</p>
+		<p>ini kedua</p>
+		<p>ini terkahir</p>
+		<br>
+		<br>
+		<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+		<p>ini kedua</p>
+		<p>ini terkahir</p>
+		
+		<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+		<p>ini kedua</p>
+		<p>ini terkahir</p>
+	
+		<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+		<p>ini kedua</p>
+		<p>ini terkahir</p>
+		
+		<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+		<p>ini kedua</p>
+		<p>ini terkahir</p>
+	
+	</div>
+	<div class="containeriPad">
+		<div class="naviPad">
+			<div class="division">
+				<a href="Home.html">
+					<img class="logo" src="../Multimedia/Images/Pictures/home.png">
+					<img class="text" src="../Multimedia/Images/Pictures/homeText.png">
+				</a>
+			</div>
+			<div class="division">
+				<a href="">					<!--Dead link-->
+					<img class="logo" src="../Multimedia/Images/Pictures/history.png">
+					<img class="text" src="../Multimedia/Images/Pictures/historyText.png">
+				</a>
+			</div>
+			<div class="division">
+				<a href="">					<!--Dead link-->
+					<img class="logo" src="../Multimedia/Images/Pictures/culture.png">
+					<img class="text" src="../Multimedia/Images/Pictures/cultureText.png">
+				</a>
+			</div>
+			<div class="division">
+				<a href="">					<!--Dead link-->
+					<img class="logo" src="../Multimedia/Images/Pictures/tourism.png">
+					<img class="text" src="../Multimedia/Images/Pictures/tourismText.png">
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<div class="footerLogo">
+			<a href="Home.html"><img class="footerPC" src="../Multimedia/Images/Pictures/websiteLogo.png"></a>
+		</div>
+		
+		<div class="footerCopyright">
+			Copyright&copy;ITHB Nyunda Team<br>
+			Jl. Dipati Ukur No.80-84, Lebakgede, Jawa Barat 40132
+		</div>
+		
+		<div class="footerMedsos">
+			<a href="https://www.facebook.com/ithb.bandung/">
+				<img src="../Multimedia/Images/Pictures/FB.png" class="flogo" title="follow us at Facebook">
+			</a>
+			
+			<a href="https://www.instagram.com/kampusharapanbangsa/">
+				<img src="../Multimedia/Images/Pictures/IG.png" class="flogo" title="follow us at Instagram">
+			</a>
+			
+			<a href="https://www.youtube.com/channel/UCMJcUGgAzgyg5rOg2irKjRg?view_as=subscriber" title="follow us at Youtube">
+				<img src="../Multimedia/Images/Pictures/youtubeLogo.png" class="flogo">
+			</a>
+		</div>
+	</div>
+</body>
+</html>

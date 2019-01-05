@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Aksara Sunda</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Hanjaya">
+	<meta name="description" content="Bahasa Sunda, Aksara Sunda">
+	<meta name="keywords" content="Sunda, Bahasa, Language, huruf, aksara Sunda">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="../CSS/aksaraSunda.css">
+	<link rel="stylesheet" href="../CSS/slideshow_style.css">
+	<link rel="stylesheet" href="CSS Font/fonts.css">
+	<link rel="icon" href="../Multimedia/Images/Pictures/ithb.ico">
+	
+	<!--jQuery-->
+	<script src="../Library/jquery-3.3.1.js"></script>
+	<script src="../Library/jquery-ui.js"></script>
+	<link rel="stylesheet" href="../Library/jquery-ui.css">
+	
+	<script>
+		$(function(){
+			$(".flogo").tooltip();
+		});
+		
+		$(function(){
+			var variableSearch=[
+				"Language",
+				"aksaraSunda",
+				"Dictionary",
+				"traditionalMusic"
+			];
+		
+			$("#searchBox").autocomplete({
+				source:variableSearch
+			});
+		});
+		
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				var scrollBottom=$(document).height() - $(window).height() - $(window).scrollTop(); 
+				if(scrollBottom == 0){
+					$(".containeriPad").css({"opacity" : "1"})
+				}else{
+					$(".containeriPad").css({"opacity" : "0.8"})
+				}
+			});
+		});
+		
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				$(".hide").each(function(i){
+					var bottomObject=$(this).offset().top + $(this).outerHeight();
+					var bottomWindow=$(window).scrollTop() + $(window).height();
+					
+					if(bottomWindow > bottomObject){
+						$(this).css({"opacity" : "1.0"})
+					}
+				});
+			});
+		});
+		
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				var bottom=$("#fa").offset().top + $("#fa").outerHeight();
+				var upper=$(window).scrollTop() + $(window).height();
+				var bottom1=$("#ngalagena").offset().top + $("#ngalagena").outerHeight();
+				var bottom2=$("#bilangan").offset().top + $("#bilangan").outerHeight();
+				var bottom3=$("#rarangken").offset().top + $("#rarangken").outerHeight();
+				if(upper > bottom){
+					$(".judulSatu").css({"opacity" : "0"})
+				}else{
+					$(".judulSatu").css({"opacity" : "1"})
+				}
+				
+				if(upper > bottom1){
+					$(".judulDua").css({"opacity" : "0"})
+				}else{
+					$(".judulDua").css({"opacity" : "1"})
+				}
+				
+				if(upper>bottom2){
+					$(".judulTiga").css({"opacity" : "0"})
+				}else{
+					$(".judulTiga").css({"opacity" : "1"})
+				}
+				
+				if(upper > bottom3){
+					$(".judulEmpat").css({"opacity" : "0"})
+				}else{
+					$(".judulEmpat").css({"opacity" : "1"})
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="title">
+		<a href="Home.html"><img class="titlePC" src="../Multimedia/Images/Pictures/websiteLogo.png"></a>
+		<span class="diff">Aksara Sunda</span>
+	</div>
+	<div class="navbar">
+		<ul>
+			<li><a href="Home.html">
+				<img class="logo" src="../Multimedia/Images/Pictures/home.png">
+				<img class="text" src="../Multimedia/Images/Pictures/homeText.png">
+				</a>
+			</li>
+			<li><a href="">						<!--Dead link-->
+				<img class="logo" src="../Multimedia/Images/Pictures/history.png">
+				<img class="text" src="../Multimedia/Images/Pictures/historyText.png">
+				</a>
+			</li>
+			<li><a href="">						<!--Dead link-->
+				<img class="logo" src="../Multimedia/Images/Pictures/culture.png">
+				<img class="text" src="../Multimedia/Images/Pictures/cultureText.png">
+				</a>
+			</li>
+			<li><a href="">						<!--Dead link-->
+				<img class="logo" src="../Multimedia/Images/Pictures/tourism.png">
+				<img class="text" src="../Multimedia/Images/Pictures/tourismText.png">
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="slideshow">
+		<div class="mySlides fade">
+			<a href="">							<!--Dead link-->
+			<video autoplay="autoplay" muted="muted" loop="loop" class="myVideo">
+				<source src="../Multimedia/Video/Tarian/slideshowTarian.mp4" type="video/mp4">
+			</video>
+			</a>
+		</div>
+	
+		<div class="mySlides fade">
+			<a href="traditionalMusic.html">							
+			<video autoplay="autoplay" muted="muted" loop="loop" class="myVideo">
+				<source src="../Multimedia/Video/Traditional Music/slideshowMusik.mp4" type="video/mp4">
+			</video>
+			</a>
+		</div>
+		
+		<div class="mySlides fade">
+			<a href="Language.html">
+			<video autoplay="autoplay" muted="muted" loop="loop" class="myVideo">
+				<source src="../Multimedia/Video/Bahasa/slideshowBahasa.mp4" type="video/mp4">
+			</video>
+			</a>
+		</div>
+	</div>
+	<script src="../JavaScript/slideshow_script.js"></script>
+	
+	<div class="searchContainer">
+		<input id="searchBox" placeholder="Mencari sesuatu?"><a id="searchLink" href=""><img id="searchIcon" src="../Multimedia/Images/Pictures/search.png"></a>
+	</div>
+	<script src="../JavaScript/searchBox_script.js"></script>
+	
+	<div class="content">
+		<p class="first hide"><b>Aksara Sunda</b> yang awalnya dikenal sebagai <mark>Aksara Sunda Kuno</mark> / <mark>Aksara Ratu Pakuan</mark> / <mark>Aksara Kaganga</mark> pada masa silam 
+		    terdokumentasikan dalam bentuk <i>piagam</i> yang berupa <ins style="color:red">batu, lempengan, logam, dan naskah kuno yang berupa daun lontar, daun nipah, kertas, 
+			dan lain sebagainya</ins></p>
+		<br>
+			<center>
+				<figure class="hide">
+					<a href="../Multimedia/Images/Pictures/naskahAksaraSunda.jpg"><img class="gambar" src="../Multimedia/Images/Pictures/naskahAksaraSunda.jpg"></a>
+					<figcaption style="font-style:italic;font-size:95%">Contoh Naskah Aksara Sunda Kuno<br>Courtesy : Wikipedia</figcaption>
+				</figure>
+			</center>
+		<br>
+		<p class="hide">Penggunaan aksara Sunda kuno ini ditemukan <mark>prasasti Kawali <i>(Ciamis)</i></mark> yang ditulis di akhir abad ke 14 atau awal abad 15-an. Prasasti ini dibuat pada masa 
+		   pemerintahan <mark>Prabu Niskala Wastukancana</mark> (1397 - 1475). Prasasti lainnya adalah <mark>Prasasti Kabantenan</mark> (Bekasi, 1482 - 1521). Selain itu juga terdapat
+		   prasasti-prasasti peninggalan <b>Tarumanegara</b> diantaranya <mark>Prasasti Kebonkopi 1</mark>, <mark>Prasasti Ciaruteun</mark>, <mark>Prasasti Jambu</mark>, 
+		   dan <mark>Prasasti Tugu</mark>.</p>
+		<br>
+			<center>
+				<figure class="hide">
+					<a href="../Multimedia/Images/Pictures/Prasasti Kawali.jpg"><img class="gambar" src="../Multimedia/Images/Pictures/Prasasti Kawali.jpg"></a>
+					<figcaption style="font-style:italic;font-size:95%">Prasasti Kawali<br>Courtesy : PeduliMuseum</figcaption>
+				</figure>
+			</center>
+		<br>
+		<br>
+			<center>
+				<figure class="hide">
+					<a href="../Multimedia/Images/Pictures/prasastiCiaruteun.jpg"><img class="gambar" src="../Multimedia/Images/Pictures/prasastiCiaruteun.jpg"></a>
+					<figcaption style="font-style:italic;font-size:95%">Prasasti Ciaruteun<br>Courtesy : sundalawas</figcaption>
+				</figure>
+			</center>
+		<br>
+		<br>
+		<p class="hide">Sedangkan naskah yang ditulis menggunakan Aksara Sunda Kuno antara lain adalah <mark>Sanghyang Siksakanda Ng Karesian</mark>, <mark>Carita Parahyangan</mark> (abad ke-16) dan 
+		   <mark>Kisah Bujanggamanik.</mark>Naskah dokumen termuda yang menggunakan Aksara Sunda Kuno adalah <mark>cerita Waruga Guru</mark> (abad ke-18) yang ditulis 
+		    menggunakan bahan kertas Eropa.</p>
+		<p class="hide">Pada pertengahan abad ke-19, mulai ada penelitian yang dilakukan oleh <mark>K.F.Holle</mark> (1829-1896), seorang dari Belanda sekaligus pendiri perkebunan teh di lereng
+		   gunung Cikuray Garut (1857) yang juga seorang peneliti Aksara Sunda Kuno di wilayah Nusantara khususnya, dan di wilayah India dan sekitarnya pada umumnya. Tahun <mark>1999</mark> melalui
+		   SK gubernur Jawa Barat No. 434/SK 614-Dis.PK/99, dilakukan pembakuan aksara Sunda yang didasari oleh aksara Sunda Kuno. Hal tersebut untuk menghidupkan aksara Sunda sebagai suatu kekayaan budaya.
+		   Pada akhirnya tahun 2008 aksara Sunda dikembangkan menjadi direktori Aksara Sunda untuk unicode yang di stadarisasi. Aksara Sunda dikelompokkan menjadi <b style="color:red">4</b> macam yaitu :
+		   <mark>25 butir Aksara Ngalagena (Aksara Dasar)</mark>, <mark>7 butir Aksara Swara (Vokal Mandiri)</mark>, <mark>Rarangken (Penanda Bunyi)</mark>, <mark>Angka</mark></p>
+		 <br>
+		 <span class="hide" style="font-weight:bold;text-decoration:underline;color:red">Navigasi Artikel :</span>
+		 <br>
+		 <br>
+		 <ul class="articleNav hide" id="back">
+			<li><a href="#aksaraDasar">Aksara Dasar</a></li>
+			<li><a href="#aksaraSwara">Aksara Swara</a></li>
+			<li><a href="#konsonan">Konsonan</a></li>
+			<li><a href="#angka">Angka</a></li>
+			<li><a href="#rarangken">Rarangken</a></li>
+		</ul>
+	     <br>
+		 <br>
+		 
+		  <!--Aksara Dasar-->
+		 <div class="judulSatu">
+		 <h2 class="hide" id="aksaraDasar">Aksara Dasar</h2>
+		 <a class="dasar" href="#ka">ka </a>|<a class="dasar" href="#ga">ga </a>|<br><br><a class="dasar" href="#nga">nga </a>|
+		 <a class="dasar" href="#ca">ca </a>|<br><br><a class="dasar" href="#ja">ja </a>|<a class="dasar" href="#nya">nya </a>|<br><br>
+		 <a class="dasar" href="#ta">ta </a>|<a class="dasar" href="#da">da </a>|<br><br><a class="dasar" href="#na">na </a>|
+		 <a class="dasar" href="#pa">pa </a>|<br><br><a class="dasar" href="#ba">ba </a>|<a class="dasar" href="#ma">ma </a>|<br><br>
+		 <a class="dasar" href="#ya">ya </a>|<a class="dasar" href="#ra">ra </a>|<br><br><a class="dasar" href="#la">la </a>|
+		 <a class="dasar" href="#wa">wa </a>|<br><br><a class="dasar" href="#sa">sa </a>|<a class="dasar" href="#ha">ha </a>|<br><br>
+		 <a class="dasar" href="#back">back </a>
+		 </div>
+		 	<center><a href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Aksara Dasar/ka.gif">
+				<figure>
+					<img class="gambar" id="ka" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Aksara Dasar/ka.png"></a>
+					<figcaption style="font-style:italic;font-size:95%">Ka</figcaption>
+				</figure>
+			</center>
+			
+			<center><a href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Aksara Dasar/ga.gif">
+				<figure>
+					<img class="gambar" id="ga" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Aksara Dasar/ga.png"></a>
+					<figcaption style="font-style:italic;font-size:95%">Ga</figcaption>
+				</figure>
+			</center>
+			
+			<center><a href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Aksara Dasar/nga.gif">
+				<figure>
+					<img class="gambar" id="nga" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Aksara Dasar/nga.png"></a>
+					<figcaption style="font-style:italic;font-size:95%">Nga</figcaption>
+				</figure>
+			</center>
+			
+			<center><a href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Aksara Dasar/ca.gif">
+				<figure>
+				<img class="gambar" id="ca" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Aksara Dasar/ca.png"></a>
+					<figcaption style="font-style:italic;font-size:95%">Ca</figcaption>
+				</figure>
+			</center>
+			
+			<center><a href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Aksara Dasar/ja.gif">
+				<figure>
+					<img class="gambar" id="ja" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Aksara Dasar/ja.png"></a>
+					<figcaption style="font-style:italic;font-size:95%">Ja</figcaption>
+				</figure>
+			</center>
+			
+			<center><a href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Aksara Dasar/nya.gif">
+				<figure>
+					<img class="gambar" id="nya" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Aksara Dasar/nya.png"></a>
+					<figcaption style="font-style:italic;font-size:95%">Nya</figcaption>
+				</figure>
+			</center>
+			
+			<center><a href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Aksara Dasar/ta.gif">
+				<figure>
+					<img class="gambar" id="ta" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Aksara Dasar/ta.png"></a>
+					<figcaption style="font-style:italic;font-size:95%">Ta</figcaption>
+				</figure>
+			</center>
+			
+			<center><a href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Aksara Dasar/da.gif">
+				<figure>
+					<img class="gambar" id="da" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Aksara Dasar/da.png"></a>
+					<figcaption style="font-style:italic;font-size:95%">Da</figcaption>
+				</figure>
+			</center>
+			
+			<center><a href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Aksara Dasar/na.gif">
+				<figure>
+					<img class="gambar" id="na" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Aksara Dasar/na.png"></a>
+					<figcaption style="font-style:italic;font-size:95%">Na</figcaption>
+				</figure>
+			</center>
+			
+			<center><a href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Aksara Dasar/pa.gif">
+				<figure>
+					<img class="gambar" id="pa" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Aksara Dasar/pa.png"></a>
+					<figcaption style="font-style:italic;font-size:95%">Pa</figcaption>
+				</figure>
+			</center>
+			
+			<center><a href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Aksara Dasar/ba.gif">
+				<figure>
+					<img class="gambar" id="ba" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Aksara Dasar/ba.png"></a>
+					<figcaption style="font-style:italic;font-size:95%">Ba</figcaption>
+				</figure>
+			</center>
+			
+			<center><a href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Aksara Dasar/ma.gif">
+				<figure>
+					<img class="gambar" id="ma" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Aksara Dasar/ma.png"></a>
+					<figcaption style="font-style:italic;font-size:95%">Ma</figcaption>
+				</figure>
+			</center>
+			
+			<center><a href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Aksara Dasar/ya.gif">
+				<figure>
+					<img class="gambar" id="ya" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Aksara Dasar/ya.png"></a>
+					<figcaption style="font-style:italic;font-size:95%">Ya</figcaption>
+				</figure>
+			</center>
+			
+			<center><a href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Aksara Dasar/ra.gif">
+				<figure>
+					<img class="gambar" id="ra" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Aksara Dasar/ra.png"></a>
+					<figcaption style="font-style:italic;font-size:95%">Ra</figcaption>
+				</figure>
+			</center>
+			
+			<center><a href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Aksara Dasar/la.gif">
+				<figure>
+					<img class="gambar" id="la" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Aksara Dasar/la.png"></a>
+					<figcaption style="font-style:italic;font-size:95%">La</figcaption>
+				</figure>
+			</center>
+			
+			<center><a href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Aksara Dasar/wa.gif">
+				<figure>
+					<img class="gambar" id="wa" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Aksara Dasar/wa.png"></a>
+					<figcaption style="font-style:italic;font-size:95%">Wa</figcaption>
+				</figure>
+			</center>
+			
+			<center><a href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Aksara Dasar/sa.gif">
+				<figure>
+					<img class="gambar" id="sa" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Aksara Dasar/sa.png"></a>
+					<figcaption style="font-style:italic;font-size:95%">Sa</figcaption>
+				</figure>
+			</center>
+			
+			<center><a href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Aksara Dasar/ha.gif">
+				<figure>
+					<img class="gambar" id="ha" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Aksara Dasar/ha.png"></a>
+					<figcaption style="font-style:italic;font-size:95%">Ha</figcaption>
+				</figure>
+			</center>
+		 <br>
+		 <br>
+		 
+		 
+		  <!--Konsonan-->
+		 <div class="judulDua">
+		 <h2 class="hide" id="konsonan">Konsonan</h2>
+		 <a class="dasar" href="#fa">fa </a>|<a class="dasar" href="#kha">kha </a>|<br><br><a class="dasar" href="#qa">qa </a>|
+		 <a class="dasar" href="#sya">sya </a>|<br><br><a class="dasar" href="#va">va </a>|<a class="dasar" href="#xa">xa </a>|<br><br>
+		 <a class="dasar" href="#za">za </a>|<a class="dasar" href="#back">back </a>
+		 </div>
+		 
+		 <center><a href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Consonant/fa.gif">
+				<figure>
+					<img class="gambar" id="fa" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Consonant/fa.png"></a>
+					<figcaption style="font-style:italic;font-size:95%">Fa</figcaption>
+				</figure>
+		</center>
+		
+		<center><a href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Consonant/kha.gif">
+				<figure>
+					<img class="gambar" id="kha" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Consonant/kha.png"></a>
+					<figcaption style="font-style:italic;font-size:95%">Kha</figcaption>
+				</figure>
+		</center>
+		
+		<center><a href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Consonant/qa.gif">
+				<figure>
+					<img class="gambar" id="qa" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Consonant/qa.png"></a>
+					<figcaption style="font-style:italic;font-size:95%">Qa</figcaption>
+				</figure>
+		</center>
+		
+		<center><a href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Consonant/sya.gif">
+				<figure>
+					<img class="gambar" id="sya" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Consonant/sya.png"></a>
+					<figcaption style="font-style:italic;font-size:95%">Sya</figcaption>
+				</figure>
+		</center>
+		
+		<center><a href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Consonant/va.gif">
+				<figure>
+					<img class="gambar" id="va" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Consonant/va.png"></a>
+					<figcaption style="font-style:italic;font-size:95%">Va</figcaption>
+				</figure>
+		</center>
+		
+		<center><a href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Consonant/xa.gif">
+				<figure>
+					<img class="gambar" id="xa" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Consonant/xa.png"></a>
+					<figcaption style="font-style:italic;font-size:95%">Xa</figcaption>
+				</figure>
+		</center>
+		
+		<center><a href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Consonant/za.gif">
+				<figure>
+					<img class="gambar" id="za" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Consonant/za.png"></a>
+					<figcaption style="font-style:italic;font-size:95%">Za</figcaption>
+				</figure>
+		</center>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<center><a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/ngalagena.gif">
+				<figure>
+					<img class="gambar" id="ngalagena" style="width:90%" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/ngalagena.gif"></a>
+					<figcaption style="font-style:italic;font-size:95%"><br>Ngalagena (Aksara Dasar + Konsonan )</figcaption>
+				</figure>
+		</center>
+		
+		 <br>
+		 <br>
+		 
+		 <!--Aksara Swara-->
+		<div class="judulTiga">
+		 <h2 class="hide" id="aksaraSwara">Aksara Swara</h2>
+		  <a class="dasar" href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Aksara Swara/a.gif">a </a>|<a class="dasar" href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Aksara Swara/ee.gif">ee </a>|<a class="dasar" href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Aksara Swara/i.gif">i </a>|
+		 <a class="dasar" href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Aksara Swara/o.gif">o </a>|<a class="dasar" href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Aksara Swara/u.gif">u </a>|<a class="dasar" href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Aksara Swara/e.gif">e </a>|
+		 <a class="dasar" href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Aksara Swara/eu.gif">eu </a>|<a class="dasar" href="#back">back </a>
+		</div>
+		<br>
+		<br>
+		<br>
+		<center>
+				<img class="gambar" style="width:90%" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Aksara Swara/swara.png">			
+		</center>
+		<br>
+		<br>
+		
+		<!--Angka-->
+		<div class="judulEmpat">
+		<h2 class="hide" id="angka">Angka</h2>
+		 <a class="dasar" href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Number/0.gif">0 </a>|<a class="dasar" href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Number/1.gif">1 </a>|<a class="dasar" href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Number/2.gif">2 </a>|
+		 <a class="dasar" href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Number/3.gif">3 </a>|<a class="dasar" href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Number/4.gif">4 </a>|<a class="dasar" href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Number/5.gif">5 </a>|
+		 <a class="dasar" href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Number/6.gif">6 </a>| <a class="dasar" href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Number/7.gif">7 </a>| <a class="dasar" href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Number/8.gif">8 </a>|
+		 <a class="dasar" href="../Multimedia/Images/Pictures/Aksara Sunda/GIF/Number/9.gif">9 </a>|<a class="dasar" href="#back">back </a>
+		</div>
+		<br>
+		<br>
+		<br>
+		<span id="bilangan"></span>
+		<center>
+				<img class="gambar" style="width:90%" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Number/angka.jpg">			
+		</center>
+		<br>
+		<br>
+		
+		 <!--rarangken-->
+		<div class="judulLima">
+		 <h2 class="hide" id="rarangken">Rarangken</h2>
+			<div class="dropdown">
+				<button class="dropbtn">Di atas</button>
+					<div class="dropcontent">
+						<a href="#paneuleung">paneuleung</a>
+						<a href="#panghulu">panghulu</a>
+						<a href="#panglayar">panglayar</a>
+						<a href="#panyecek">panyecek</a>
+						<a href="#pamepet">pamepet</a>
+					</div>
+			</div>
+			
+			<div class="dropdown">
+				<button class="dropbtn">Di kanan</button>
+					<div class="dropcontent">
+						<a href="#pamaeh">pamaeh</a>
+						<a href="#pangwisad">pangwisad</a>
+						<a href="#panolong">panolong</a>
+					</div>
+			</div>
+			
+			<div class="dropdown">
+				<button class="dropbtn">Di kiri</button>
+					<div class="dropcontent">
+						<a href="#paneleng">paneleng</a>
+					</div>
+			</div>
+			
+			<div class="dropdown">
+				<button class="dropbtn">Di bawah</button>
+					<div class="dropcontent">
+						<a href="#pamingkal">pamingkal</a>
+						<a href="#panyakra">panyakra</a>
+						<a href="#panyiku">panyiku</a>
+						<a href="#panyuku">panyuku</a>
+					</div>
+			</div><br><br>
+		 <a class="dasar" href="#back">back </a>
+	    </div>
+		<br>
+		<br>
+		<h3 id="panghulu"><mark>Panghulu</mark></h3>
+		 <center><a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panghulu.png">
+				<figure style="border:1px solid black">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panghulu.png"></a>
+					<figcaption style="font-style:italic;font-size:2vw;color:blue;font-weight:bold">mengubah bunyi konsonan /a/ -> /i/</figcaption>
+					<br>
+					</br>
+					<a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panghulu_contoh.png">
+					<img class="gambar"  src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panghulu_contoh.png">
+					</a>
+				</figure>
+		</center>
+		<br>
+		<h3 id="pamepet"><mark>Pamepet</mark></h3>
+		 <center><a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/pamepet.png">
+				<figure style="border:1px solid black">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/pamepet.png"></a>
+					<figcaption style="font-style:italic;font-size:2vw;font-size:2vw;color:blue;font-weight:bold">mengubah bunyi konsonan /a/ -> /e/</figcaption>
+					<br>
+					</br>
+					<a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panghulu_contoh.png">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/pamepet_contoh.png">
+					</a>
+				</figure>
+		</center>
+		
+		<br>
+		<h3 id="paneuleung"><mark>Paneuleung</mark></h3>
+		 <center><a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/paneuleung.png">
+				<figure style="border:1px solid black">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/paneuleung.png"></a>
+					<figcaption style="font-style:italic;font-size:2vw;font-size:2vw;color:blue;font-weight:bold">mengubah bunyi konsonan /a/ -> /eu/</figcaption>
+					<br>
+					</br>
+					<a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/paneuleung_contoh.png">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/paneuleung_contoh.png">
+					</a>
+				</figure>
+		</center>
+		
+		<br>
+		<h3 id="panglayar"><mark>Panglayar</mark></h3>
+		 <center><a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panglayar.png">
+				<figure style="border:1px solid black">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panglayar.png"></a>
+					<figcaption style="font-style:italic;font-size:2vw;font-size:2vw;color:blue;font-weight:bold">menambah imbuhan /r/</figcaption>
+					<br>
+					</br>
+					<a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panglayar_contoh.png">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panglayar_contoh.png">
+					</a>
+				</figure>
+		</center>
+		
+		<br>
+		<h3 id="panyecek"><mark>Panyecek</mark></h3>
+		 <center><a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panyecek.png">
+				<figure style="border:1px solid black">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panyecek.png"></a>
+					<figcaption style="font-style:italic;font-size:2vw;font-size:2vw;color:blue;font-weight:bold">menambah imbuhan /ng/</figcaption>
+					<br>
+					</br>
+					<a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panyecek_contoh.png">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panyecek_contoh.png">
+					</a>
+				</figure>
+		</center>
+		
+		<br>
+		<h3 id="paneleng"><mark>Paneleng</mark></h3>
+		 <center><a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/paneleng.png">
+				<figure style="border:1px solid black">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/paneleng.png"></a>
+					<figcaption style="font-style:italic;font-size:2vw;font-size:2vw;color:blue;font-weight:bold">mengubah bunyi konsonan /a/ -> /ee/</figcaption>
+					<br>
+					</br>
+					<a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/paneleng_contoh.png">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/paneleng_contoh.png">
+					</a>
+				</figure>
+		</center>
+		
+		<br>
+		<h3 id="panolong"><mark>Panolong</mark></h3>
+		 <center><a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panolong.png">
+				<figure style="border:1px solid black">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panolong.png"></a>
+					<figcaption style="font-style:italic;font-size:2vw;font-size:2vw;color:blue;font-weight:bold">mengubah bunyi konsonan /a/ -> /o/</figcaption>
+					<br>
+					</br>
+					<a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panolong_contoh.png">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panolong_contoh.png">
+					</a>
+				</figure>
+		</center>
+		
+		<br>
+		<h3 id="pamaeh"><mark>Pamaeh</mark></h3>
+		 <center><a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/pamaeh.png">
+				<figure style="border:1px solid black">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/pamaeh.png"></a>
+					<figcaption style="font-style:italic;font-size:2vw;font-size:2vw;color:blue;font-weight:bold">mematikan vokal pada semua konsonan</figcaption>
+					<br>
+					</br>
+					<a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/pamaeh_contoh.png">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/pamaeh_contoh.png">
+					</a>
+					<br>
+					<br>
+					<a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/pamaeh_contoh2.png">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/pamaeh_contoh2.png">
+					</a>
+					<figcaption style="font-style:italic;font-size:2vw;font-size:1.5vw;color:red;font-weight:bold">Pamaeh tidak akan berfungsi untuk konsonan RA, NGA, dan HA<br>
+					karena mereka sudah memiliki PANGLAYAR, PENYECEK, dan PANGWISAD. Akan tetapi bisa digunakan untuk penulisan singkatan</figcaption>
+					<br>
+					<br>
+					<a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/pamaeh_contoh3.png">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/pamaeh_contoh3.png">
+					</a>
+					<figcaption style="font-style:italic;font-size:2vw;font-size:1.5vw;color:red;font-weight:bold">Pamaeh juga tidak akan berfungsi jika digunakan di belakang bunyi R, L dan Y<br>
+					karena mereka sudah memiliki PANYAKRA, PENYIKU, dan PAMINGKAL.</figcaption>
+					
+				</figure>
+		</center>
+		<br>
+		<h3 id="pangwisad"><mark>Pangwisad</mark></h3>
+		 <center><a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/pangwisad.png">
+				<figure style="border:1px solid black">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/pangwisad.png"></a>
+					<figcaption style="font-style:italic;font-size:2vw;font-size:2vw;color:blue;font-weight:bold">menambah imbuhan /h/</figcaption>
+					<br>
+					</br>
+					<a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/pangwisad_contoh.png">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/pangwisad_contoh.png">
+					</a>
+				</figure>
+		</center>
+		
+		<br>
+		<h3 id="pamingkal"><mark>Pamingkal</mark></h3>
+		 <center><a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/pamingkal.png">
+				<figure style="border:1px solid black">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/pamingkal.png"></a>
+					<figcaption style="font-style:italic;font-size:2vw;font-size:2vw;color:blue;font-weight:bold">menyisipkan bunyi /y/ di tengah konsonan</figcaption>
+					<br>
+					</br>
+					<a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/pamingkal_contoh.png">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/pamingkal_contoh.png">
+					</a>
+					<figcaption style="font-style:italic;font-size:2vw;font-size:1.5vw;color:red;font-weight:bold">PAMINGKAL tidak berfungsi pada konsonan SA dan NA<br>karena sudah ada SYA dan NYA</figcaption>
+		
+				</figure>
+		</center>
+		
+		<br>
+		<h3 id="panyuku"><mark>Panyuku</mark></h3>
+		 <center><a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panyuku.png">
+				<figure style="border:1px solid black">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panyuku.png"></a>
+					<figcaption style="font-style:italic;font-size:2vw;font-size:2vw;color:blue;font-weight:bold">mengubah bunyi konsonan /a/ -> /u/</figcaption>
+					<br>
+					</br>
+					<a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panyuku_contoh.png">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panyuku_contoh.png">
+					</a>
+				</figure>
+		</center>	
+		
+		<br>
+		<h3 id="panyiku"><mark>Panyiku</mark></h3>
+		 <center><a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panyiku.png">
+				<figure style="border:1px solid black">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panyiku.png"></a>
+					<figcaption style="font-style:italic;font-size:2vw;font-size:2vw;color:blue;font-weight:bold">menyisipkan bunyi /L/ di tengah konsonan</figcaption>
+					<br>
+					</br>
+					<a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panyiku_contoh.png">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panyiku_contoh.png">
+					</a>
+				</figure>
+		</center>
+		
+		<br>
+		<h3 id="panyakra"><mark>Panyakra</mark></h3>
+		 <center><a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panyakra.png">
+				<figure style="border:1px solid black">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panyakra.png"></a>
+					<figcaption style="font-style:italic;font-size:2vw;font-size:2vw;color:blue;font-weight:bold">menyisipkan bunyi /R/ di tengah konsonan</figcaption>
+					<br>
+					</br>
+					<a href="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panyakra_contoh.png">
+					<img class="gambar" src="../Multimedia/Images/Pictures/Aksara Sunda/PNG/Rarangken/panyakra_contoh.png">
+					</a>
+				</figure>
+		</center>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 
+		<a href="Dictionary.html"><img id="navRight" src="../Multimedia/Images/Pictures/toDictionary.png" onmouseenter="rightChange()" onmouseleave="rightRestart()"></a>
+	</div>
+	
+	<script src="../JavaScript/Language_Navigator.js"></script>
+	<div class="containeriPad">
+		<div class="naviPad">
+			<div class="division">
+				<a href="Home.html">
+					<img class="logo" src="../Multimedia/Images/Pictures/home.png">
+					<img class="text" src="../Multimedia/Images/Pictures/homeText.png">
+				</a>
+			</div>
+			<div class="division">
+				<a href="">					<!--Dead link-->
+					<img class="logo" src="../Multimedia/Images/Pictures/history.png">
+					<img class="text" src="../Multimedia/Images/Pictures/historyText.png">
+				</a>
+			</div>
+			<div class="division">
+				<a href="">					<!--Dead link-->
+					<img class="logo" src="../Multimedia/Images/Pictures/culture.png">
+					<img class="text" src="../Multimedia/Images/Pictures/cultureText.png">
+				</a>
+			</div>
+			<div class="division">
+				<a href="">					<!--Dead link-->
+					<img class="logo" src="../Multimedia/Images/Pictures/tourism.png">
+					<img class="text" src="../Multimedia/Images/Pictures/tourismText.png">
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<div class="footerLogo">
+			<a href="Home.html"><img class="footerPC" src="../Multimedia/Images/Pictures/websiteLogo.png"></a>
+		</div>
+		
+		<div class="footerCopyright">
+			Copyright&copy;ITHB Nyunda Team<br>
+			Jl. Dipati Ukur No.80-84, Lebakgede, Jawa Barat 40132
+		</div>
+		
+		<div class="footerMedsos">
+			<a href="https://www.facebook.com/ithb.bandung/">
+				<img src="../Multimedia/Images/Pictures/FB.png" class="flogo" title="follow us at Facebook">
+			</a>
+			
+			<a href="https://www.instagram.com/kampusharapanbangsa/">
+				<img src="../Multimedia/Images/Pictures/IG.png" class="flogo" title="follow us at Instagram">
+			</a>
+			
+			<a href="https://www.youtube.com/channel/UCMJcUGgAzgyg5rOg2irKjRg?view_as=subscriber" title="follow us at Youtube">
+				<img src="../Multimedia/Images/Pictures/youtubeLogo.png" class="flogo">
+			</a>
+		</div>
+	</div>
+</body>
+</html>

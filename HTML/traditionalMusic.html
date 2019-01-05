@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Traditional Music</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Hanjaya">
+	<meta name="description" content="Alat musik traditional">
+	<meta name="keywords" content="angklung, kendang, Kacapi, Jentreng, rebab, suling bambu, karinding,calung, saron">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="../CSS/traditionalMusic.css">
+	<link rel="stylesheet" href="../CSS/slideshow_style.css">
+	<link rel="stylesheet" href="CSS Font/fonts.css">
+	<link rel="icon" href="../Multimedia/Images/Pictures/ithb.ico">
+	
+	<!--jQuery-->
+	<script src="../Library/jquery-3.3.1.js"></script>
+	<script src="../Library/jquery-ui.js"></script>
+	<link rel="stylesheet" href="../Library/jquery-ui.css">
+	
+	<script>
+		$(function(){
+			$(".flogo").tooltip();
+			$(".up").tooltip();
+		});
+		
+		$(function(){
+			var variableSearch=[
+				"Language",
+				"aksaraSunda",
+				"Dictionary",
+				"traditionalMusic"
+			];
+		
+			$("#searchBox").autocomplete({
+				source:variableSearch
+			});
+		});
+		
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				$(".hide").each(function(i){
+					let bottomObject=$(this).offset().top + $(this).outerHeight();
+					let bottomWindow=$(window).scrollTop() + $(window).height();
+					
+					if(bottomWindow > bottomObject){
+						$(this).css({"opacity" : "1.0"})
+					}
+				});
+			});
+		});
+		
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				let object=$("#kendang").offset().top + $("#kendang").outerHeight();
+				let bottomWindow=$(window).scrollTop() + $(window).height();
+				
+				if(bottomWindow > object){
+					$(".up").css({"display" : "block"})
+				}else{
+					$(".up").css({"display" : "none"})
+				}
+			});
+		});
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				var scrollBottom=$(document).height() - $(window).height() - $(window).scrollTop(); 
+				if(scrollBottom == 0){
+					$(".containeriPad").css({"opacity" : "1"})
+					$(".up").css({"display" : "none"})
+				}else{
+					$(".containeriPad").css({"opacity" : "0.8"})
+				}
+			});
+		});
+		
+		$(function(){
+			$("#tabs").tabs();
+		});
+	</script>
+</head>
+<body>
+	<div class="title">
+		<a href="Home.html"><img class="titlePC" src="../Multimedia/Images/Pictures/websiteLogo.png"></a>
+		<span class="diff">Traditional Music</span>
+	</div>
+	<div class="navbar">
+		<ul>
+			<li><a href="Home.html">
+				<img class="logo" src="../Multimedia/Images/Pictures/home.png">
+				<img class="text" src="../Multimedia/Images/Pictures/homeText.png">
+				</a>
+			</li>
+			<li><a href="">							<!--Dead link-->
+				<img class="logo" src="../Multimedia/Images/Pictures/history.png">
+				<img class="text" src="../Multimedia/Images/Pictures/historyText.png">
+				</a>
+			</li>
+			<li><a href="">							<!--Dead link-->
+				<img class="logo" src="../Multimedia/Images/Pictures/culture.png">
+				<img class="text" src="../Multimedia/Images/Pictures/cultureText.png">
+				</a>
+			</li>
+			<li><a href="">							<!--Dead link-->
+				<img class="logo" src="../Multimedia/Images/Pictures/tourism.png">
+				<img class="text" src="../Multimedia/Images/Pictures/tourismText.png">
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="slideshow">
+		<div class="mySlides fade">
+			<a href="">								<!--Dead link-->
+			<video autoplay="autoplay" muted="muted" loop="loop" class="myVideo">
+				<source src="../Multimedia/Video/Tarian/slideshowTarian.mp4" type="video/mp4">
+			</video>
+			</a>
+		</div>
+	
+		<div class="mySlides fade">
+			<a href="traditionalMusic.html">							
+			<video autoplay="autoplay" muted="muted" loop="loop" class="myVideo">
+				<source src="../Multimedia/Video/Traditional Music/slideshowMusik.mp4" type="video/mp4">
+			</video>
+			</a>
+		</div>
+		
+		<div class="mySlides fade">
+			<a href="Language.html">
+			<video autoplay="autoplay" muted="muted" loop="loop" class="myVideo">
+				<source src="../Multimedia/Video/Bahasa/slideshowBahasa.mp4" type="video/mp4">
+			</video>
+			</a>
+		</div>
+	</div>
+	<script src="../JavaScript/slideshow_script.js"></script>
+	
+	<div class="searchContainer">
+		<input id="searchBox" placeholder="Mencari sesuatu?"><a id="searchLink" href=""><img id="searchIcon" src="../Multimedia/Images/Pictures/search.png"></a>
+	</div>
+	<script src="../JavaScript/searchBox_script.js"></script>
+	
+	<!-- Back Button -->
+	 <a href="#back"><button class="up" title="back"><img src="../Multimedia/Images/Pictures/back.png"></button></a>
+	 
+	<div class="content">
+		<h1 class="hide">Alat Musik Tradisional Jawa Barat</h1>
+		<br>
+		<br>
+		<p><span style="color:red;font-weight:bolder">Navigasi artikel :</span></p>
+		<p><ul id="back" class="articleNav">
+			<li><a href="#angklung">angklung</a></li>
+			<li><a href="#kendang">kendang</a></li>
+			<li><a href="#kacapi">kacapi</a></li>
+			<li><a href="#jentreng">jentreng</a></li>
+			<li><a href="#rebab">rebab</a></li>
+			<li><a href="#suling">suling bambu</a></li>
+			<li><a href="#kerinding">kerinding</a></li>
+			<li><a href="#calung">calung</a></li>
+			<li><a href="#saron">saron</a></li>
+		</ul>
+		</p>
+		<br>
+		<br>
+		<br>
+		<h2 class="hide" id="angklung">Angklung</h2>
+		<p class="hide">Angklung adalah alat musik khas Indonesia yang banyak dijumpai di daerah Jawa Barat. Alat musik tradisional ini terbuat dari tabung-tabung bambu. 
+		   Sedangkan suara atau nada alat ini dihasilkan dari efek benturan tabung-tabung bambu tersebut dengan cara digoyangkan. Sebagai bentuk pengakuan 
+		   alat musik Indonesia, Angklung telah terdaftar sebagai <mark>Masterpiece of Oral and Intangible Heritage of Humanity</mark> dari UNESCO 
+		   sejak November 2010. Angklung memiliki beberapa jenis, antara lain : <mark>Angklung Kanekes</mark>, <mark>Angklung Dogdog Lojor</mark>, 
+		   <mark>Angklung Gubrag</mark>, dan <mark>Angklung Padaeng</mark>.</p>
+		 <p class="hide">Angklung berasal dari bahasa Sunda <mark>angkleung-angkleungan</mark> yaitu gerakan pemain angklung dan membentuk suara klung yang dihasilkannya. 
+		    Secara etimologis angklung berasal dari kata <mark>“angka” yang berarti nada dan “lung” yang berarti pecah</mark>. Jadi, angklung merujuk pada nada
+			yang pecah atau tidak lengkap.</p>
+		 <p class="hide">Bentuk angklung terdiri dari dua atau lebih batang bambu dalam berbagai ukuran sesuai dengan kebutuhan tinggi rendahnya nada yang dibentuk 
+		    menyerupai alat musik calung. Menurut <mark>Dr. Groneman</mark>, Angklung telah ada di Nusantara, bahkan sebelum era Hindu. Menurut <mark>Jaap Kunst<mark> dalam bukunya 
+			Music in Java, selain di Jawa Barat, Angklung juga bisa ditemui di daerah Sumatra Selatan dan Kalimantan. Di luar itu, masyarakat Lampung, 
+			Jawa Timur dan Jawa Tengah juga mengenal alat musik tersebut.</p>
+		 <p class="hide">Di lingkungan Kerajaan Sunda (abad ke 12 – abad ke 16) , Angklung dimainkan sebagai bentuk pemujaan terhadap <mark>Nyai Sri Pohaci</mark> 
+		    sebagai lambang Dewi Sri (dewi padi/dewi kesuburan), Selain itu, konon Angklung juga merupakan alat musik yang dimainkan sebagai pemacu semangat dalam 
+			peperangan, sebagaimana yang diceritakan dalam Kidung Sunda. </p>
+		 <p class="hide">Dua tokoh yang berperan dalam perkembangan Angklung di Jawa Barat adalah <mark>Daeng Soetigna</mark> sebagai Bapak Angklung Diatonis 
+		    Kromatis dan <mark>Udjo Ngalagena</mark> yang mengembangkan teknik permainan berdasarkan laras-laras pelog dan salendro. </p>
+		 <p class="hide">Pada tahun 1938, Daeng Soetigna, menciptakan angklung dengan tangga nada diatonis. Angklung inovasi Daeng Soetigna tersebut berbeda 
+		    dengan angklung pada umumnya yang berdasarkan tangga nada tradisional pelog atau salendro. Inovasi inilah yang kemudian membuat Angklung dengan 
+			leluasa bisa dimainkan harmonis bersama alat-alat musik Barat, bahkan bisa disajikan dalam bentuk orkestra. Sejak saat itu, Angklung semakin populer, 
+			hingga akhirnya PBB, melalui UNESCO, pada November 2010, mengakuinya sebagai warisan dunia yang harus dilestarikan. </p>
+		 <p class="hide">Setelah Daeng Soetigna, salah seorang muridnya, Udjo Ngalagena, meneruskan usaha Sang Guru mempopulerkan Angklung temuannya, 
+		    dengan jalan mendirikan <b>“Saung Angklung”</b> di daerah Bandung. Hingga hari ini, tempat yang kemudian dikenal sebagai 
+			<mark>“Saung Angklung Udjo”</mark> tersebut masih menjadi pusat kreativitas yang berkenaan dengan Angklung. </p>
+		 <br>
+		 <br>
+		 <span class="hide" style="color:green;font-weight:bolder">Jenis Angklung :</span>
+		 <br>
+		 <br>
+			<div class="hide" id="tabs">
+				<ul>
+					<li><a href="#dogdoglojor">Dog Dog Lojor</a></li>
+					<li><a href="#kanekes">Kanekes</a></li>
+					<li><a href="#gubrag">Gubrag</a></li>
+					<li><a href="#padaeng">Padaeng</a></li>
+					<li style="float:right;background-color:red"><a href="#interaktiv">Angklung Interaktiv</a></li>
+				</ul>
+				<div id="dogdoglojor" style="text-align:center">
+					
+						<video controls="controls" class="small">
+							<source src="../Multimedia/Video/Traditional Music/dogdoglojor.mp4" type="video/mp4">
+						</video>
+				
+				
+						<p>Angklung ini sering digunakan pada kesenian <mark>dogdog lojor</mark> yang terdapat di masyarakat <mark>Kasepuhan Pancer Pangawinan</mark> 
+						   atau kesatuan adat Banten Kidul yang tersebar di sekitar Gunung Halimun. Istilah Dogdog Lojor sendiri sejatinya diambil dari nama salah satu 
+						   instrumen dalam tradisi ini, yakni Dogdog Lojor. Angklung yang digunakan memiliki fungsi pada tradisinya, yakni sebagai 
+						   <mark>pengiring ritus bercocok-tanam</mark>. Setelah masyarakat di sana menganut Islam, dalam perkembangannya, kesenian tersebut juga digunakan 
+						   untuk mengiringi khitanan dan perkawinan. Dalam kesenian Dogdog Lojor, terdapat 2 instrumen Dogdog Lojor dan 4 instrumen angklung besar. </p>
+					
+				</div>
+				
+				<div id="kanekes" style="text-align:center">
+					<video controls="controls" class="small">
+							<source src="../Multimedia/Video/Traditional Music/kanekes.mp4" type="video/mp4">
+					</video>
+					<p>Angklung Kanekes adalah Angklung yang dimainkan oleh masyarakat Kanekes (Baduy), di daerah Banten. Tradisi Angklung yang ada pada 
+					   masyarakat Kanekes ini terbilang kuno, dan tetap dilestarikan sebagaimana fungsi yang dicontohkan leluhur mereka, yakni 
+					   <mark>mengiringi ritus bercocok-tanam (padi)</mark>, bukan semata-mata untuk hiburan orang-orang. Angklung digunakan atau dibunyikan 
+					   ketika mereka menanam padi di huma (ladang). Pada masyarakat Kanekes, yang terbagi menjadi dua kelompok, yakni kelompok 
+					   <mark>Baduy Luar (Kajeroan)</mark> dan kelompok <mark>Baduy (Luar Kaluaran)</mark>, yang berhak membuat Angklung hanyalah warga 
+					   <mark>Baduy Jero</mark>, itu pun tidak semua orang, melainkan hanya mereka yang menjadi keturunan para pembuat Angklung. 
+					   Sementara itu, warga Baduy Luar tidak membuat Angklung, melainkan cukup membelinya dari warga Baduy Jero. Nama-nama Angklung di 
+					   Kanekes dari yang terbesar adalah: <mark>indung, ringkung, dongdong, gunjing, engklok, indung leutik, torolok, dan roel</mark>. </p>
+				</div>
+				
+				<div id="gubrag" style="text-align:center">
+					<video controls="controls">
+							<source src="../Multimedia/Video/Traditional Music/gubrag.mp4" type="video/mp4">
+					</video>
+					<p>Angklung gubrag terdapat di kampung Cipining, kecamatan Cigudeg, Bogor. Angklung ini telah berusia tua dan digunakan untuk menghormati 
+					   dewi padi dalam kegiatan melak pare (menanam padi), ngunjal pare (mengangkut padi), dan ngadiukeun (menempatkan) ke leuit (lumbung). 
+					   Dalam mitosnya angklung gubrag mulai ada ketika suatu masa kampung Cipining mengalami musim paceklik. Hal ini terkait mitos Dewi Sri 
+					   yang enggan menurunkan hujan. </p>
+				</div>
+				
+				<div id="padaeng" style="text-align:center">
+					<p>Angklung Padaeng dikenalkan oleh <mark>Daeng Soetigna</mark> sekitar tahun 1938. Inovasi angklung padaeng ini terdapat pada 
+					   laras nada yang digunakan yaitu <mark>diatonik</mark> yang sesuai dengan sistem musik barat. Sejalan dengan teori musik, Angklung 
+					   Padaeng secara khusus dibagi ke dalam dua kelompok, yakni: <mark>angklung melodi</mark> dan <mark>angklung akompanimen</mark>. 
+					   Angklung melodi adalah yang secara spesifik terdiri dari dua tabung suara dengan beda nada 1 oktaf. Pada satu unit angklung, 
+					   umumnya terdapat 31 angklung melodi kecil dan 11 angklung melodi besar. Sementara itu, angklung akompanimen adalah angklung yang 
+					   digunakan sebagai pengiring untuk memainkan nada-nada harmoni. Tabung suaranya terdiri dari 3 sampai 4, sesuai dengan akor diatonis. 
+					   Setelah inovasi Daeng Soetigna, pembaruan-pembaruan lainnya terhadap angklung terus berkembang. 
+					   Beberapa diantaranya adalah: <mark>Angklung Sarinande, Arumba, Angklung Toel, dan Angklung Sri Murni</mark>. </p>
+					   <br>
+					   <br>
+					<p>Berkat inovasi Daeng Soetigna, angklung memiliki tangga nada diatonis dan bisa diadaptasi untuk memainkan musik musik genre lainnya.
+					   hal ini menyebabkan popularitas angklung naik pesat. Berikut beberapa contoh pengiringan musik barat menggunakan angklung.</p>
+					   <br>
+					<center>
+					<figure>
+						<video controls="controls" class="small">
+							<source src="../Multimedia/Video/Traditional Music/Bohemian Rhapsody.mp4" type="video/mp4">
+						</video>
+						<figcaption style="font-size:95%"><i>Bohemian Rhapsody by Saung Mang Udjo</i></figcaption>
+					</figure>
+					</center>
+					<br>
+					<br>
+					<br>
+					<br>
+					<center>
+					<figure>
+						<video controls="controls">
+							<source src="../Multimedia/Video/Traditional Music/Gen3.mp4" type="video/mp4">
+						</video>
+						<figcaption style="font-size:95%"><i>Generasi ke 3 Saung Mang Udjo</i></figcaption>
+					</figure>
+					</center>
+					<br>
+					<br>
+					<br>
+					<br>
+					<center>
+					<figure>
+						<video controls="controls">
+							<source src="../Multimedia/Video/Traditional Music/Tomoko Ihara.mp4" type="video/mp4">
+						</video>
+						<figcaption style="font-size:95%"><i><span style="color:red">Tomoko Ihara</span> - pemain angklung Jepang</i></figcaption>
+					</figure>
+					</center>
+				</div>
+				
+				<div id="interaktiv" style="text-align:center">
+					<a href="#newWindow"><span style="color:red;opacity:0.5;font-weight:bolder">(Jangan lupa cek game interaktive dengan mengklik tombol angklung di bawah artikel ini)</span></a>
+					<p>Angklung interaktiv bukan merupakan jenis angklung, tetapi ini adalah salah satu metode permainan angklung.Salah satu yang menjadi 
+					   daya pikat angklung adalah angklung dapat dimainkan secara interaktiv dengan mengajak penonton ikut serta merasakan bermain angklung. 
+					</p>
+					<p>Saat hendak bermain angklung secara interaktive, diperlukan seseorang untuk memberikan isyarat nada apa yang hendak dimainkan. Isyarat
+					   yang diberikan adalah isyarat tangan yang diadopsi oleh <mark>Daeng Udjo</mark> dari <i>Curwen's Solfege Handsigns</i> yang telah 
+					   disempurnakan menjadi metoda <mark>Koda'ly</mark>. Isyarat ini melambangkan tinggi nada memakai bentukan tangan dan jari, 
+					   sekaligus tinggi tangan seperti gambar-gambar berikut:</p>
+					 <div style="display:flex;flex-wrap:wrap;width:90%;margin:auto">
+						<figure style="margin:1%;">
+							<a href="../Multimedia/Images/Pictures/do.jpg"><img src="../Multimedia/Images/Pictures/do.jpg"></a>
+						<figcaption style="font-size:95%">Do</figcaption>
+						</figure>
+						
+						<figure style="margin:1%">
+							<a href="../Multimedia/Images/Pictures/re.jpg"><img src="../Multimedia/Images/Pictures/re.jpg"></a>
+						<figcaption style="font-size:95%">Re</figcaption>
+						</figure>
+						
+						<figure style="margin:1%">
+							<a href="../Multimedia/Images/Pictures/mi.jpg"><img src="../Multimedia/Images/Pictures/mi.jpg"></a>
+						<figcaption style="font-size:95%">Mi</figcaption>
+						</figure>
+						
+						<figure style="margin:1%">
+							<a href="../Multimedia/Images/Pictures/fa.jpg"><img src="../Multimedia/Images/Pictures/fa.jpg"></a>
+						<figcaption style="font-size:95%">Fa</figcaption>
+						</figure>
+						
+						<figure style="margin:1%">
+							<a href="../Multimedia/Images/Pictures/sol.jpg"><img src="../Multimedia/Images/Pictures/sol.jpg"></a>
+						<figcaption style="font-size:95%">Sol</figcaption>
+						</figure>
+						
+						<figure style="margin:1%">
+							<a href="../Multimedia/Images/Pictures/la.jpg"><img src="../Multimedia/Images/Pictures/la.jpg"></a>
+						<figcaption style="font-size:95%">La</figcaption>
+						</figure>
+						
+						<figure style="margin:1%">
+							<a href="../Multimedia/Images/Pictures/si.jpg"><img src="../Multimedia/Images/Pictures/si.jpg"></a>
+						<figcaption style="font-size:95%">Si</figcaption>
+						</figure>
+						
+						<figure style="margin:1%">
+							<a href="../Multimedia/Images/Pictures/dotinggi.jpg"><img src="../Multimedia/Images/Pictures/dotinggi.jpg"></a>
+						<figcaption style="font-size:95%">Do'</figcaption>
+						</figure>
+					 </div>
+					 <br>
+					 <br>
+					 <p>Ensembel Angklung terbesar, yang dimainkan oleh 5.182 orang di National Mall Washington, DC, Amerika Serikat pada Sabtu 9 Juli 2011.
+					    Pegelaran Angklung itu dipimpin oleh <mark>Daeng Udjo</mark>, memainkan lagu <i>We Are The World</i></p>
+					 <br>
+					 <center>
+					<figure>
+						<video controls="controls">
+							<source src="../Multimedia/Video/Traditional Music/Rekor.mp4" type="video/mp4">
+						</video>
+					</figure>
+					</center>
+					<br>
+					<br>
+					<br>
+					 <center>
+					<figure>
+						<video controls="controls">
+							<source src="../Multimedia/Video/Traditional Music/congress.mp4" type="video/mp4">
+						</video>
+						<figcaption style="font-size:95%">Angklung in 2nd Congress of Nation EE International</figcaption>
+					</figure>
+					</center>
+					<br>
+					<br>
+					<br>
+					
+					<p>Terlihat sangat jelas, daya pikat angklung yaitu bisa membawa orang orang dalam kebersamaan. Nah kalian juga bisa mencoba bermain angklung interaktiv
+					   dengan menglik tombol di bawah ini.</p>
+					   <br>
+					   <button id="newWindow"><img src="../Multimedia/Images/Pictures/angklung.png"></button>
+				</div>
+			</div>
+			<script src="../JavaScript/open_window.js"></script>
+			<br>
+			<br>
+		<span class="hide" style="color:green;font-weight:bolder">Cara memainkan angklung :</span>
+		<br>
+		<br>
+		<p class="hide">Permainan Angklung cukup mudah dilakukan bagi setiap orang. Memainkanya dengan cara, satu tangan memegang rangka angklung, dan tangan yang lain 
+		   menggoyangkannya hingga menghasilkan suara atau bunyi. Terdapat tiga teknik dasar menggoyangkan angklung, yakni:</p>
+		 <p class="hide">
+			<ol class="hide">
+				<li><mark>Kurulung (getar)</mark>, merupakan teknik yang paling umum dipakai, di mana satu tangan memegang rangka angklung, dan tangan lainnya 
+				    menggoyangkan angklung selama nada yang diinginkan, hingga tabung-tabung bambu yang ada silih beradu dan menghasilkan bunyi.</li>
+				<li><mark>Cetok (sentak)</mark>, merupakan teknik di mana tabung dasar ditarik dengan cepat oleh jari ke telapak tangan kanan, 
+				    sehingga angklung akan berbunyi sekali saja (stacato).</li>
+				<li><mark>Tengkep</mark> merupakan teknik yang mirip seperti kurulung, namun salah satu tabung ditahan tidak ikut bergetar </li>
+			</ol>
+		 </p>
+		 <br>
+		 <br>
+		<h2 class="hide" id="kendang">Kendang</h2>
+		<p class="hide">Kendang atau gendang, merupakan alat musik pukul khas Jawa Barat. Kendang digunakan sebagai instrumen dari rangkaian gamelan. Jika di musik modern kita mengenal
+		   drum sebagai alat musik pengatur tempo. Maka kendang adalah alat musik yang digunakan untuk <mark>mengatur ritme</mark> di musik tradisional, terutama musik gamelan.</p>
+		<p class="hide">Cara memainkan kendang yaitu dengan teknik di pukul, dalam bahasa sunda disebut dengan istilah <i>tepak</i>  atau <i>ditepak</i>. Ditepak mempunyai arti 
+		   dipukul dalam bahasa Indosesia. Ditepak bukan berarti di pukul sebagaimana kita memukul sesuatu. Ditepak merupakan teknik memukul alat musik dengan <mark>telapak 
+		   dan ujung tangan</mark>. Pola tepakan atau pukulan pada alat musik ini tidak senbarangan. Dalam mementaskan gamelan, kendang menjadi faktor utama penentukan interval 
+		   dan ritme musik yang dibawakan.</p>
+		<p class="hide">Alat musik kendang terbuat dari kayu, kulit dan rotan berkualitas. Salah satu kayu yang sering digunakan adalah <mark>kayu nangka</mark>, sedangkan bahan 
+		   kulit yang dipake adalah kulit kambing dan sapi/kerbau yang berkualitas. penggunaan kulit pada kendang di dasarkan pada pemilihan nada pada kendang itu sendiri.
+		   Kendang bagian bawah bernada rendah menggunakan <mark>kulit kerbau</mark>. Sedangkan untuk bagian atas yang bernada tinggi menggunakan <mark>kulit kambing</mark>. 
+		   Kemudian tali yang digunakan adalah tali yang terbuat dari <mark>rotan</mark>.</p>
+		<br>
+				<center>
+					<figure>
+						<video controls="controls">
+							<source src="../Multimedia/Video/Traditional Music/kendang.mp4" type="video/mp4">
+						</video>
+						<figcaption style="font-size:95%"><i>Permainan Kendang</i></figcaption>
+					</figure>
+				</center>
+		<br>
+		<br>
+		<span class="hide" style="color:green;font-weight:bolder">Cara memainkan kendang :</span>
+		<br>
+		<br>
+		<p class="hide">
+			<ol class="hide">
+				<li>Perhatikan posisi kendang. Posisi kendang bagian besar di letakan di <mark>bawah</mark> kemudian bagian yang kecil di <mark>atas</mark>.Setelah itu anda mengambil posisi tangan kanan 
+				    di bagian gendang yang berukuran kecil, sedangkan tangan kiri di letakan di bagian gendang yang berukuran besar. Posisi kaki otomatis mengikuti posisi tangan. 
+					duduk yang nyaman dan seenak mungkin.</li>
+				<li>perhatikan cara memukul atau menepak kendang. Karena posisinya sebelah kanan jadi, cara memukul gendang pada bagian kecil dengan cara memukul dengan menggunakan 
+				    <mark>telunjuk dan jari</mark>.Buat ketukan sesuai ritme lagu yang ada ingin mainkan.</li>
+				<li> cara memukul bagian bawah kendang dengan tangan kiri. Tentunya berbeda cara memukulnya kendang bagian kanan. Cara memukul kendang bagian bawah dengan 
+				     memukul oleh semua <mark>ujung telapak tangan dan di tahan bagian dalam tangan</mark>. Selain itu menggunakan bagian tumit kaki untuk meredam suara bas gendang.</li>
+			</ol>
+		</p>
+		<br>
+		<br>
+
+		<h2 class="hide" id="kacapi">Kacapi</h2>
+		<center>
+			<img src="../Multimedia/Images/Pictures/kecapiRincik.jpg">
+		</center>
+		<p class="hide">Alat musik kacapi merupakan alat musik tradisional khas jawa barat yang di mainkannya dengan cara di petik. Kacapi biasanya dimainkan solo (perseorangan) 
+		   atau untuk mengiringi musik pentas lainnya. Kacapi terbuat dari kayu sebagai badan alat musiknya dan senar sebagai instrumen tempat keluarnya suara.Kacapi terdiri dari 
+		   dua jenis berdasarkan fungsinya ketika dimainkan :</p>
+		<p class="hide">
+			<ul style="list-style-type:square">
+				<li><mark>Kacapi rincik / kacapi anak</mark></li>
+				<li style="margin-bottom:2%;list-style-type:none">Kacapi anak memiliki fungsi sebagai pengiring musik dengan <i>frekuensi</i> tinggi. Kacapi rincik memiliki <b>15 not balok</b> pada 
+				 umumnya</li>
+				<li><mark>Kacapi indung / kacapi induk</mark></li>
+				<li style="position:outside;list-style-type:none">Kacapi indung adalah kacapi yang berfungsi sebagai pemimpin kacapi, dimainkan dengan cara memberikan 
+				 <i>intro, bridges</i> dan berfungsi juga menentukan tempo, dawai yang digunakan antara <b>18 sampai 20 dawai</b></li>
+			</ul>
+		</p>
+		
+		<p>Nada pada kacapi terdiri dari <b>5</b> nada <mark>laras pelog</mark> sunda, yaitu <ins>1 (da), 2(mi), 3(na), 4(ti) 5(la) 1(da)</ins></p>
+		<br>
+		<br>
+		<span class="hide" style="color:green;font-weight:bolder">Cara memainkan kacapi :</span>
+		<br>
+		<br>
+		<ol class="hide">
+			<li style="margin-bottom:2%">Teknik yang pertama disebut teknik <mark>sintreuk-toel</mark> ialah suatu teknik cara memainkan kecapi dengan cara dipetik menggunakan telunjuk kanan dan kiri.
+				<br>
+				<br>
+				Perhatikan gerakan dan posisi jari yakni satu telunjuk kanan melipat ke dalam. Kemudian ujung kukunya menyentuh bagian senar dengan gerakan <i>”menjentik”</i> dan 
+				telunjuk bagian kiri agak melengkung ke bagian bawah. <i>Noel</i> adalah posisi ujung kuku memetik senar dengan gerakan sedikit menyentuh.
+				<br>
+				<br>
+				Teknik ini dilakukan supaya posisi kedua jari ketika melakukan gerakan tersebut dapat menghasilkan alunan nada yang diinginkan. Fungsi jari tersebut sebagai cara 
+				untuk mengeluarkan nada pada kecapi</li>
+			<li>Teknik yang kedua yaitu teknik <mark>jambret</mark> yaitu sebuah teknik dimana nada yang keluar sekaligus tiga nada bersamaan. Nada tersebut keluar akibat  
+			    sebuah petikan jari-jari bagian kanan, dengan menggunakan ibu jari, telunjuk, dan jari tengah. Sedangkan bagian kiri menggunakan ibu jari dan telunjuk.</li>
+		</ol>
+		<br>
+		<br>
+		<p style="color:red" class="hide">Kalian juga bisa mencoba membunyikan kacapi dengan mengklik blok blok nada yang ada di frame di bawah ini :</p>
+		
+		<div class="kacapiContainer">
+			<div class="note" onclick="petik('mi()()()')">
+				MI'''
+			</div>
+			
+			<div class="note" onclick="petik('na()()()')">
+				NA'''
+			</div>
+			
+			<div class="note" onclick="petik('ti()()()')">
+				TI'''
+			</div>
+			
+			<div class="note" onclick="petik('la()()()')">
+				LA'''
+			</div>
+			
+			<div class="note" onclick="petik('da()()()')">
+				DA'''
+			</div>
+			
+			<div class="note" onclick="petik('mi()()')">
+				MI''
+			</div>
+			
+			<div class="note" onclick="petik('na()()')">
+				NA''
+			</div>
+			
+			<div class="note" onclick="petik('ti()()')">
+				TI''
+			</div>
+			
+			<div class="note" onclick="petik('la()()')">
+				LA''
+			</div>
+			
+			<div class="note" onclick="petik('da()()')">
+				DA''
+			</div>
+			
+			<div class="note" onclick="petik('mi()')">
+				MI'
+			</div>
+			
+			<div class="note" onclick="petik('na()')">
+				NA'
+			</div>
+			
+			<div class="note" onclick="petik('ti()')">
+				TI'
+			</div>
+			
+			<div class="note" onclick="petik('la()')">
+				LA'
+			</div>
+			
+			<div class="note" onclick="petik('da()')">
+				DA'
+			</div>
+			
+			<div class="note" onclick="petik('mi')">
+				MI
+			</div>
+			
+			<div class="note" onclick="petik('na')">
+				NA
+			</div>
+			
+			<div class="note" onclick="petik('ti')">
+				TI
+			</div>
+			
+			<div class="note" onclick="petik('la')">
+				LA
+			</div>
+			
+			<div class="note" onclick="petik('da')">
+				DA
+			</div>
+			
+			<audio id="myRadio">
+				<source id="mySource" src="" type="audio/mp3">
+			</audio>
+			<script src="../JavaScript/kacapi.js"></script>
+		</div>
+		<br>
+		<br>
+		<h2 id="jentreng">Jentreng</h2>
+		<center>
+			<img src="../Multimedia/Images/Pictures/jentreng.jpg">
+		</center>
+		<p class="hide">Alat musik tradisional petik lainnya adalah jetreng. jenis alat musik khas jawa barat ini merupakan sejenis alat musik mirip dengan kacapi namun berbeda dari 
+		penggunaan nadanya. Jika kacapi menggunakan lima laras pelog (da, mi, na, ti, la, da), jentreng menggunakan <b>7</b> buah nada seperti berikut :</p>
+		<p class="hide">
+			<ul class="ulKacapi">
+				<li><mark>Laras Pelog</mark></li>
+					<ul style="list-style-type:none">
+						<li><b>Dawai 1</b> bernada <span style="color:red">5 (la atau <i>singgul</i>)</span></li>
+						<li><b>Dawai 2</b> bernada <span style="color:red">1 (da atau <i>barang</i>)</span></li>
+						<li><b>Dawai 3</b> bernada <span style="color:red">2 (mi atau <i>loloran</i>)</span></li>
+						<li><b>Dawai 4</b> bernada <span style="color:red">3 (na atau <i>panelu</i>)</span></li>
+						<li><b>Dawai 5</b> bernada <span style="color:red">4 (ti atau <i>galimer</i>)</span></li>
+						<li><b>Dawai 6</b> bernada <span style="color:red">5 rendah (oktav la)</span></li>
+						<li><b>Dawai 7</b> bernada <span style="color:red">1 rendah (oktav da)</span></li>
+					</ul>
+				<li><mark>Laras Syailendro</mark>
+					<ul style="list-style-type:none">
+						<li><b>Dawai 1</b> bernada <span style="color:red">4 (ti atau <i>galimer</i>)</span></li>
+						<li><b>Dawai 2</b> bernada <span style="color:red">1 (da atau <i>barang</i>)</span></li>
+						<li><b>Dawai 3</b> bernada <span style="color:red">2 (mi atau <i>loloran</i>)</span></li>
+						<li><b>Dawai 4</b> bernada <span style="color:red">3 (na atau <i>panelu</i>)</span></li>
+						<li><b>Dawai 5</b> bernada <span style="color:red">4 (ti atau <i>galimer</i>)</span></li>
+						<li><b>Dawai 6</b> bernada <span style="color:red">5 rendah (oktav la)</span></li>
+						<li><b>Dawai 7</b> bernada <span style="color:red">1 rendah (oktav da)</span></li>
+					</ul>
+			</ul>
+		</p>
+		<p class="hide">Jika dibandingkan dengan kacapi ukuran jentreng lebih kecil. Jentreng terbuat dari bahan kayu <mark>kenanga atau nangka</mark>.</p>
+		<br>
+		<br>
+		<span class="hide" style="color:green;font-weight:bolder">Cara memainkan jentreng :</span>
+		<br>
+		<br>
+		<p class="hide">Cara memainkan alat musik jentreng sebenarnya tidak berbeda jauh dengan cara memainkan kecapi, yaitu dengan cara <b><i>dipetik dengan teknik di-toel (disentuh)</i></b> 
+		dengan jari kiri-kanan.Tahap pertama yaitu, tempatkan telunjuk, jari tengah, dan ibu jari tangan kanan untuk memetik nada-nada tinggi. kemudian telunjuk tangan kiri untuk 
+		menyentuh nada-nada rendah. petik senar sesuai urutan, sesuai lagu yang akan dimainkan.</p>
+		<br>
+		<br>
+		<h2 id="rebab">Rebab</h2>
+		<center>
+			<img src="../Multimedia/Images/Pictures/rebab.jpg">
+		</center>
+		<p class="hide">Rebab merupakan salah satu alat musik tradisional indonesia yang termasuk kedalam jenis alat musik gesek. Rebab merupakan serapan dari bahasa arab. 
+		   Rebab menjadi alat musik pengiring pada beberapa jenis seni pertunjukan.Bahan utama pembuatan rebab adalah kayu dengan penutup resonatornya berupa kulit yang tipis, 
+		   kemudian di pasang senar. Sedangkan alat gesek rebab terbuat dari bulu atau rambut hewan ternak. Nada yang dihasilkan berupa nada <mark>pentatonis</mark>.</p>
+		<br>
+		<br>
+		<span class="hide" style="color:green;font-weight:bolder">Cara memainkan rebab :</span>
+		<br>
+		<br>
+		<p class="hide">cara memainkan alat musik rebab ini dengan cara di gesek, tentunya dengan aturan baku penggunaan rebab. biasanya musik rebab di mainkan oleh seseorang 
+		sebagai pengiring alunan dalam musik pertunjukan.</p>
+		<br>
+		<br>
+		<center>
+			<figure>
+				<video controls="controls">
+					<source src="../Multimedia/Video/Traditional Music/rebab.mp4" type="video/mp4">
+				</video>
+				<figcaption style="font-size:95%"><i>Permainan Rebab - ISBI</i></figcaption>
+			</figure>
+		</center>
+		<br>
+		<br>
+		<h2 id="suling">Suling Bambu</h2>
+		<p class="hide">Alat musik ini adalah alat musik tiup yang terbuat dari bambu <mark>Tamiang</mark>, satu jenis bambu yang tipis dan berdiameter kecil sehingga cocok untuk 
+		   dijadikan suling, suling sunda disebut “suling” yang biasa mengiringi Kacapi, Gamelan dan Tembang Sunda gamelan, suara yang dihasilkan sangat unik dan membangkitkan jiwa 
+		   dari pendengar, itu karena skala nada suling dan jiwa dari pemain suling. Ada 4 nada skala untuk suling sunda:</p>
+		<ol class="hide">
+			<li><i>Pelog Degung</i></li>
+			<li><i>Madenda atau Sorong</i></li>
+			<li><i>Salendro</i></li>
+			<li><i>Mandalungan</i></li>
+		</ol>
+	</div>
+	
+	<div class="containeriPad">
+		<div class="naviPad">
+			<div class="division">
+				<a href="Home.html">
+					<img class="logo" src="../Multimedia/Images/Pictures/home.png">
+					<img class="text" src="../Multimedia/Images/Pictures/homeText.png">
+				</a>
+			</div>
+			<div class="division">
+				<a href="">								<!--Dead link-->
+					<img class="logo" src="../Multimedia/Images/Pictures/history.png">
+					<img class="text" src="../Multimedia/Images/Pictures/historyText.png">
+				</a>
+			</div>
+			<div class="division">
+				<a href="">								<!--Dead link-->
+					<img class="logo" src="../Multimedia/Images/Pictures/culture.png">
+					<img class="text" src="../Multimedia/Images/Pictures/cultureText.png">
+				</a>
+			</div>
+			<div class="division">	
+				<a href="">								<!--Dead link-->
+					<img class="logo" src="../Multimedia/Images/Pictures/tourism.png">
+					<img class="text" src="../Multimedia/Images/Pictures/tourismText.png">
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<div class="footerLogo">
+			<a href="Home.html"><img class="footerPC" src="../Multimedia/Images/Pictures/websiteLogo.png"></a>
+		</div>
+		
+		<div class="footerCopyright">
+			Copyright&copy;ITHB Nyunda Team<br>
+			Jl. Dipati Ukur No.80-84, Lebakgede, Jawa Barat 40132
+		</div>
+		
+		<div class="footerMedsos">
+			<a href="https://www.facebook.com/ithb.bandung/">
+				<img src="../Multimedia/Images/Pictures/FB.png" class="flogo" title="follow us at Facebook">
+			</a>
+			
+			<a href="https://www.instagram.com/kampusharapanbangsa/">
+				<img src="../Multimedia/Images/Pictures/IG.png" class="flogo" title="follow us at Instagram">
+			</a>
+			
+			<a href="https://www.youtube.com/channel/UCMJcUGgAzgyg5rOg2irKjRg?view_as=subscriber" title="follow us at Youtube">
+				<img src="../Multimedia/Images/Pictures/youtubeLogo.png" class="flogo">
+			</a>
+		</div>
+	</div>
+</body>
+</html>
